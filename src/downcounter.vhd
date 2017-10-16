@@ -10,7 +10,7 @@ entity downcounter is
 end downcounter;
 
 architecture Behavioral of downcounter is
-    signal cnt : unsigned(15 downto 0);
+    signal cnt : unsigned(22 downto 0);
 begin
 
     trigger <= '1' when cnt = 0 else '0';
