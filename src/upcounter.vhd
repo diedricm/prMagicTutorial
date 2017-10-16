@@ -10,7 +10,7 @@ entity upcounter is
 end upcounter;
 
 architecture Behavioral of upcounter is
-    signal cnt : unsigned(15 downto 0);
+    signal cnt : unsigned(21 downto 0);
 begin
 
     trigger <= '1' when cnt = 0 else '0';
